@@ -38,3 +38,15 @@ busImage.addEventListener("mouseleave", () => {
     busImage.style.transform = "scale(1)";
     busImage.style.transition = "all 0.3s"
 })
+
+document.querySelectorAll("h1, h2, h4, p").forEach(copyText => {
+    copyText.addEventListener("copy", () => {
+        alert('Swiper, no Swiping!')}
+    )
+})
+
+document.querySelectorAll("img").forEach(imgBlank => {
+    window.addEventListener('resize', () => {
+    imgBlank.style.display = "none";
+    })
+})
