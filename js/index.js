@@ -57,7 +57,12 @@ document.querySelectorAll(".btn").forEach(mouseMove => {
     })
 })
 
-const changeColor = document.querySelector(".footer p");
+const changeColor = document.querySelector("footer");
 changeColor.addEventListener("dblclick", () => {
-    changeColor.style.backgroundColor = "orange";
+    changeColor.style.backgroundColor = "#abd1df";
+})
+
+const textColor = document.querySelector(".content-pick");
+textColor.addEventListener("mouseover", () => {
+    textColor.style.backgroundColor = "white";
 })
