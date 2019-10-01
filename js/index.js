@@ -50,3 +50,14 @@ document.querySelectorAll("img").forEach(imgBlank => {
     imgBlank.style.display = "none";
     })
 })
+
+document.querySelectorAll(".btn").forEach(mouseMove => {
+    mouseMove.addEventListener("mousemove", () => {
+        mouseMove.style.backgroundColor = "#fcdd3b";
+    })
+})
+
+const changeColor = document.querySelector(".footer p");
+changeColor.addEventListener("dblclick", () => {
+    changeColor.style.backgroundColor = "orange";
+})
