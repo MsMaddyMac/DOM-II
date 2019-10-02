@@ -10,9 +10,15 @@ headerChange.addEventListener("mouseenter", () => {
     headerChange.style.transition = "all 0.3s"
 })
 
+const headerColor = document.querySelector("header");
+headerColor.addEventListener("click", () => {
+    headerColor.style.backgroundColor = "#fcdd3b";
+})
+
 document.querySelectorAll(".nav-link").forEach(el => {
-    el.addEventListener("click", () => {
+    el.addEventListener("click", (e) => {
     el.style.writingMode = "vertical-rl";
+    e.stopPropagation();
     })
 })
 
@@ -59,7 +65,7 @@ document.querySelectorAll(".btn").forEach(mouseMove => {
 
 const changeColor = document.querySelector("footer");
 changeColor.addEventListener("dblclick", () => {
-    changeColor.style.backgroundColor = "#abd1df";
+    changeColor.style.backgroundColor = "orange";
 })
 
 const textColor = document.querySelector(".content-pick");
