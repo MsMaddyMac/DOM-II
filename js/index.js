@@ -22,6 +22,8 @@ document.querySelectorAll(".nav-link").forEach(el => {
     })
 })
 
+
+
 // ------------ Ends of Header Section ------------ //
 
 const body = document.querySelector("body");
@@ -71,4 +73,9 @@ changeColor.addEventListener("dblclick", () => {
 const textColor = document.querySelector(".content-pick");
 textColor.addEventListener("mouseover", () => {
     textColor.style.backgroundColor = "white";
+})
+
+const stopLink = document.querySelector("nav-link");
+stopLink.addEventListener("click", (e) => {
+    e.preventDefault();
 })
